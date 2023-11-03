@@ -28,13 +28,12 @@ export default function JobGrid({ job }: { job: TJobAPI }) {
             backdropFilter: 'blur(12px)',
           }}
         >
-          {job.company.split('')[0]}
+          {job.company}
         </p>
         <div>
           <p className="truncate text-sm font-medium text-foreground md:text-lg">
             {job.jobPosition}
           </p>
-          <p className="truncate">{job.company}</p>
         </div>
       </div>
 

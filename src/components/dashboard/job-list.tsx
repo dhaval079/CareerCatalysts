@@ -28,7 +28,7 @@ export default function JobList({ job }: { job: TJobAPI }) {
             backdropFilter: 'blur(12px)',
           }}
         >
-          {job.company.split('')}
+          {job.company}
         </p>
         <div>
           <p className="truncate text-sm font-medium text-foreground md:text-lg">
