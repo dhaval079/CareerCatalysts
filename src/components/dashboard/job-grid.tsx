@@ -21,16 +21,18 @@ export default function JobGrid({ job }: { job: TJobAPI }) {
     <li className="space-y-3 rounded-lg border bg-slate-500/10 p-3 text-xs md:p-6 md:text-base">
       <div className="space-y-3 border-b-4 border-dotted border-accent pb-3">
         <p
-          className="rounded-md bg-primary/50 py-1 text-center text-5xl font-bold text-primary-foreground"
+          className="rounded-md bg-primary/50 py-1 text-center font-bold text-primary-foreground"
           style={{
             boxShadow: `inset 3px 3px 6px rgba(255, 255, 255, 0.1),
             inset -6px -6px 12px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.3)`,
             backdropFilter: 'blur(12px)',
+            fontSize: `${Math.min(5, 300 / job.company.length)}rem`, // Adjust the max size (5rem) and width (300) as needed
           }}
         >
           {job.company}
         </p>
-        <div>
+      </div>
+
           <p className="truncate text-sm font-medium text-foreground md:text-lg">
             {job.jobPosition}
           </p>
