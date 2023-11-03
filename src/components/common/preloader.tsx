@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import logo from '~/public/assets/logo.png';
+import logo from '~/public/assets/career (1).png'
 
 export default function Preloader() {
   return (
@@ -9,8 +9,8 @@ export default function Preloader() {
         src={logo}
         alt="Logo"
         priority
-        width={150}
-        height={150}
+        width={170}
+        height={170}
         className="animate-bounce"
       />
     </div>

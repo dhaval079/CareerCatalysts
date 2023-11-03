@@ -23,7 +23,7 @@ export default function JobList({ job }: { job: TJobAPI }) {
         <p
           className="rounded-md bg-primary/50 py-1 text-center text-5xl font-bold text-primary-foreground"
           style={{
-            fontSize:'1 rem',
+            fontSize: '0.8rem',
             boxShadow: `inset 3px 3px 6px rgba(255, 255, 255, 0.1),
             inset -6px -6px 12px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.3)`,
             backdropFilter: 'blur(12px)',
