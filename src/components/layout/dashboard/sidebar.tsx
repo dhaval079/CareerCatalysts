@@ -12,6 +12,8 @@ import {
   LogOutIcon,
   PlusCircleIcon,
   UserCircleIcon,
+  SmilePlus
+  
 } from 'lucide-react';
 import { twMerge } from 'tailwind-merge';
 
@@ -59,6 +61,11 @@ const sidebarRoutes = [
     title: 'Profile',
     path: '/dashboard/profile',
     icon: <UserCircleIcon />,
+  },
+  {
+    title: 'Oppurtunities',
+    path: '/dashboard/profile',
+    icon: <SmilePlus />,
   },
 ];
 
