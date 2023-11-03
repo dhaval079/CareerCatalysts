@@ -11,7 +11,7 @@ export default function Footer() {
           rel="noreferrer"
           className="font-medium underline underline-offset-4"
         >
-          GyBex
+          CareerCatalyst
         </a>
       </div>
     </footer>
