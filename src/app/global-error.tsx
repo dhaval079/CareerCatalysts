@@ -35,7 +35,7 @@ export default function GlobalError({ reset }: { reset: () => void }) {
                 rel="noreferrer"
                 className="font-medium underline underline-offset-4"
               >
-                GyBex
+                CareerCatalyst
               </a>{' '}
               for assistance.
             </p>
