@@ -112,7 +112,7 @@ export default function IndexPageClient() {
             className="mx-auto w-1/2 md:w-1/4"
           />
           <motion.h2 variants={headingDescription}>
-            Effortlessly Manage Your Job Search
+            Effortlessly Manage Your Job
           </motion.h2>
         </motion.div>
         <p className="md:text-center">
