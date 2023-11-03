@@ -105,7 +105,7 @@ export default function IndexPageClient() {
             variants={headingTitle}
             className="mx-auto w-fit bg-gradient-to-b from-transparent to-foreground bg-clip-text text-transparent"
           >
-            BexJobs
+            CareerCatalysts
           </motion.h1>
           <Separator
             orientation="horizontal"
@@ -116,12 +116,12 @@ export default function IndexPageClient() {
           </motion.h2>
         </motion.div>
         <p className="md:text-center">
-          BexJobs is a user-friendly job search management tool designed to help
+          CareerCatalysts is a user-friendly job search management tool designed to help
           you keep track of all your job applications in one place. With
-          BexJobs, you can easily add job listings and track their status,
+          CareerCatalysts, you can easily add job listings and track their status,
           whether it&apos;s pending, interview scheduled, or declined. Say
           goodbye to the hassle of managing your job search with spreadsheets or
-          sticky notes, and say hello to BexJobs - your ultimate job search
+          sticky notes, and say hello to CareerCatalysts - your ultimate job search
           companion.
         </p>
         <Button
