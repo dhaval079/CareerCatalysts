@@ -1,4 +1,4 @@
-import { BarChart2Icon, LineChartIcon, PieChart2Icon} from 'lucide-react';
+import { BarChart2Icon, LineChartIcon, PieChartIcon} from 'lucide-react';
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
 import StatsBarChart from './stats-bar-chart';
@@ -24,7 +24,7 @@ export default function ChartsContainer() {
           </TabsTrigger>
           <TabsTrigger value="line-chart">
             <div className="flex items-center gap-1">
-              <PieChart2Icon aria-hidden="true" />
+              <PieChartIcon aria-hidden="true" />
               <span>Pie Chart</span>
             </div>
           </TabsTrigger>
