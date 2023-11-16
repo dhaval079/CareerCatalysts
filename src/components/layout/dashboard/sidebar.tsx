@@ -64,7 +64,7 @@ const sidebarRoutes = [
   },
   {
     title: 'Oppurtunities',
-    path: '/dashboard/profile',
+    path: '/dashboard/oppurtunities',
     icon: <SmilePlus />,
   },
 ];

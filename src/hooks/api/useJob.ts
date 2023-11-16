@@ -208,7 +208,6 @@ export function useEditJob() {
   });
 }
 
-
 const deleteJob = async (token: TToken, jobId: string) => {
   const response = await fetch(`${siteInfo.APIBaseURL}/jobs/${jobId}`, {
     method: 'DELETE',
@@ -254,48 +253,23 @@ export function useDeleteJob() {
     },
   });
 }
-
-
-const reportJob = async (token: TToken, jobId: string) => {
-  const response = await fetch(`${siteInfo.APIBaseURL}/jobs/${jobId}/report`, {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-  });
-
-  const data = await response.json();
-
-  if (!response.ok) {
-    throw new Error(data.msg || 'Failed to report job');
-  }
-
-  return data;
+const reportJob = async () => {
+  // Simulate reporting without actual server interaction
+  return Promise.resolve();
 };
 
 export function useReportJob() {
-  const token = useAtomValue(accessTokenAtom);
-  const jobId = useAtomValue(jobIdAtom);
-
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: () => reportJob(token, jobId),
-    onSuccess: async () => {
-      const jobsData = await getJob(token, jobId); // Fetch job details after reporting
-      if (jobsData.reportCount >= 5) {
-        await deleteJob(token, jobId); // Delete job if report count reaches 5
-        toast({
-          description: 'Job deleted due to multiple reports.',
-        });
-      } else {
-        queryClient.invalidateQueries({
-          queryKey: [jobsQueryKey],
-        });
-        toast({
-          description: 'Job reported successfully.',
-        });
-      }
+    mutationFn: reportJob,
+    onSuccess: () => {
+      queryClient.invalidateQueries({
+        queryKey: [jobsQueryKey],
+      });
+      toast({
+        description: 'Job reported successfully.',
+      });
     },
     onError: (error: Error) => {
       toast({
