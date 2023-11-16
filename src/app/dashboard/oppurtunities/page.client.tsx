@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useGetJobs } from '~/hooks/api/useJob';
 import Skeleton from '~/components/ui/skeleton';
 import Filters from '~/components/dashboard/filters-oppurtunities';
-import Jobs from '~/components/dashboard/jobs';
+import Jobs from '~/components/dashboard/jobs-o';
 import PaginationButtons from '~/components/dashboard/pagination-buttons';
 import Search from '~/components/dashboard/search';
 import Sort from '~/components/dashboard/sort';

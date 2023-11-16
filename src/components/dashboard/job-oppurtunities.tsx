@@ -39,19 +39,6 @@ export default function JobGrid({ job }: { job: TJobAPI }) {
         </div>
       </div>
 
-      <div className="space-y-3">
-        <div className="flex items-center gap-1">
-          <MapPinIcon size={15} />
-          <span>{job.jobLocation}</span>
-        </div>
-
-        <div className="flex flex-wrap items-center justify-between gap-3 md:gap-6">
-          <div className="flex items-center gap-1">
-            <BriefcaseIcon size={15} />
-            <span>{job.jobType}</span>
-          </div>
-        </div>
-      </div>
 
       <div className="grid gap-3 md:grid-cols-2">
         <ReportJobBtn id={job._id} />
