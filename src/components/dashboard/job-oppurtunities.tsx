@@ -44,31 +44,17 @@ export default function JobGrid({ job }: { job: TJobAPI }) {
           <MapPinIcon size={15} />
           <span>{job.jobLocation}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <CalendarDaysIcon size={15} />
-          <span>{formattedDate}</span>
-        </div>
 
         <div className="flex flex-wrap items-center justify-between gap-3 md:gap-6">
           <div className="flex items-center gap-1">
             <BriefcaseIcon size={15} />
             <span>{job.jobType}</span>
           </div>
-          <span
-            className={twMerge(
-              'rounded-md px-2.5 py-0.5 text-xs font-medium',
-              jobStatusColors[job.jobStatus],
-            )}
-          >
-            {job.jobStatus}
-          </span>
         </div>
       </div>
 
       <div className="grid gap-3 md:grid-cols-2">
-        <EditJobBtn id={job._id} />
         <ReportJobBtn id={job._id} />
-        <DeleteJobBtn id={job._id} />
       </div>
     </li>
   );
